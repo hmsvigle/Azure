@@ -5,6 +5,10 @@
   * Learn how to monitor your resources
  
 ## 1. Create Policy
+  * creating rules for resources. We can use predefined policy as well.
+
+> Sample predefined policy samples are available @ https://github.com/Azure/azure-policy
+ 
 
 ## 2. Organize Policy with Initiatives
   * 

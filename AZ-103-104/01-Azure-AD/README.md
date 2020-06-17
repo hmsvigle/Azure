@@ -74,7 +74,9 @@
     
    ### 8. NOT: Azure AD Connect; PIM
 
-
+   * `Azure AD Connect`:- is required to sync off-prim Azure AD to On-prim Azure ADDS (Active Directory Domain Service)
+   * `Azure AD Connect Health`:- Checks status of our sync e.g : Symc Errors, Sync Users/Data mismatch etc.
+   
 
 
 

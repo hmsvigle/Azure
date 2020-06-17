@@ -54,6 +54,10 @@
 
    ![az-2](https://user-images.githubusercontent.com/24938159/84591480-66043f00-ae5c-11ea-8c8e-1bdc8feb59eb.JPG)
     
+   ![AAD-2](https://user-images.githubusercontent.com/24938159/84875942-45c6c100-b0a4-11ea-9f34-1d3c2155c2ab.JPG)
+
+   ![AAD-3](https://user-images.githubusercontent.com/24938159/84875956-4a8b7500-b0a4-11ea-94ae-55e25038c9b0.JPG)
+   
    * Once the tasks completed, the certificate id (from windows machine) obtained is same as the device-id registered in `Azure AD -> Devices`
     
    * Now run the command `dsregcmd /status` once again & you would find the `AzureAdJoined : Yes` & Once the device is logged in with corpid, then `AzureAdPort` will be set to `Yes` 

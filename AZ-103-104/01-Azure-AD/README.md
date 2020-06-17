@@ -92,7 +92,17 @@
      
    ![Authentication-1](https://user-images.githubusercontent.com/24938159/84910475-8cccaa80-b0d4-11ea-8465-a201741e14cd.JPG)
 
+   - Password hash Sync + Seamless SSO:  AD Connect Diagram (Above)
+      
+   - Pass-Through Authentication + Seamless SSO:
+   
+   ![Authentication-2](https://user-images.githubusercontent.com/24938159/84912462-17aea480-b0d7-11ea-8984-335db2c32250.JPG)
+   
+   - 3rd party Federation Providers:
+   ![Authentication-Fd-3](https://user-images.githubusercontent.com/24938159/84912332-f77ee580-b0d6-11ea-9c31-708f30450cca.JPG)
+    
 
+    
 
 
 

@@ -1,23 +1,39 @@
 
 # Manage Azure identities and governance (15-20%) 
 
- ## Manage Azure AD objects 
+  * Manage Azure AD objects 
+  * Manage RBAC
+  * Manage Subscription & Governance
  
-   ### Create users and groups 
-   ### Manage user and group properties 
-   ### Manage guest accounts 
+ In this Section we will cover 1st topic in detail.
+ 
+ ## A. Manage Azure AD objects 
+    
+   1. Create users and groups 
+   2. Manage user and group properties 
+   3. Manage guest accounts
+ > Note: Above 3 points are covered in detail [Lab-1](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_01-Manage_Azure_AD_Identities.md)
+   4. Perform bulk user updates
+   5. Manage device settings
+   6. Configure Azure AD Join
+   7. Configure self-service password reset
+   8. NOT: Azure AD Connect; PIM
    
-   This [Lab](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_01-Manage_Azure_AD_Identities.md) covers all the above topics. 
-   #### Note: 
-   1. This is necessary in order to assign an Azure AD Premium P2 license to your user account. 
-   2. Azure AD Premium P1 or P2 licenses are required in order to implement dynamic groups.
-      - User Settings -> Usage location to United States. 
-   3. Create Dynamic queries: 
+   
+   #### Note for Lab-1:
+   * This is necessary in order to assign an Azure AD Premium P2 license to your user account. 
+   * Azure AD Premium P1 or P2 licenses are required in order to implement dynamic groups.
+       - User Settings -> Usage location to United States. 
+   * Create Dynamic queries: 
  
  
-   ### Manage device settings 
-   ### Perform bulk user updates 
-   ### Configure Azure AD Join 
+   ### 4. Perform bulk user updates 
+   To be updated ...
+   
+   ### 5. Manage device settings 
+   To be updated ...
+   
+   ### 6. Configure Azure AD Join 
    * This [Doc](https://docs.microsoft.com/en-us/azure/active-directory/devices/azureadjoin-plan) covers detailed documentation
    * Azure AD join allows you to join devices directly to Azure AD without the need to join to on-prem AD
    * 3 ways to register a device: 
@@ -25,7 +41,7 @@
      * Azure AD joined : Organizational Devices registered
      * Hybrid AD Join:
      
-   #### Azure AD Join: 
+   #### AD Join: 
    Lets add a Windows 10 device. Followings are the steps
    * cmd -> hostname -f 
          -> dsregcmd /status => Chack for "AzureAdJoined" & "AzureAdPort" 

@@ -90,7 +90,9 @@
      - AD FS
      - 3rd party Federation Providers
      
-   
+   ![Authentication-1](https://user-images.githubusercontent.com/24938159/84910475-8cccaa80-b0d4-11ea-8465-a201741e14cd.JPG)
+
+
 
 
 

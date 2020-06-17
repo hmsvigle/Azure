@@ -78,6 +78,19 @@
    * `Azure AD Connect Health`:- Checks status of our sync e.g : Sync Errors, Sync Users/Data mismatch etc.
    
    ![aad-connect](https://user-images.githubusercontent.com/24938159/84909244-12e7f180-b0d3-11ea-93e5-e5b32bdc7a4e.JPG)
+   
+   #### Authentication Designs:
+   
+   * Cloud Authentication
+     - Cloud Only
+     - Password hash Sync + Seamless SSO
+     - Pass-Through Authentication + Seamless SSO
+   
+   * Federated Authentication
+     - AD FS
+     - 3rd party Federation Providers
+     
+   
 
 
 

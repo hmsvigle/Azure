@@ -61,9 +61,9 @@
    *  `AzureAdPort` is set to Yes --> Azure AD Joined Devices & No --> Azure AD Registered Devices
    
        
-   ### Configure self-service password reset 
+   ### 7. Configure self-service password reset 
    
-   ### NOT: Azure AD Connect; PIM
+   ### 8. NOT: Azure AD Connect; PIM
 
 
 

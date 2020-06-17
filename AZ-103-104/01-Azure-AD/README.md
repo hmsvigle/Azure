@@ -93,12 +93,22 @@
    ![Authentication-1](https://user-images.githubusercontent.com/24938159/84910475-8cccaa80-b0d4-11ea-8465-a201741e14cd.JPG)
 
    - Password hash Sync + Seamless SSO:  AD Connect Diagram (Above)
+      * Password-hash method is integrated feature of AD-Connect. So no extra setup required to enable this.
       
    - Pass-Through Authentication + Seamless SSO:
+     * Autosync is taken care by AD-Connect every 2 minutes as in Password-Hash method
+     * For Authentication works by setting up 2-3 Authentication-Agents On-Premise platform.
+     * When user tries to login Password is validated as synched by AD-Connect. 
+     * However authentication process goes through Pass-Through setup. For this, pre-requisite is `The Authentication-agents should have outbound internet access.`
+     * Along with this, as back-up, Password-hash technique can also be implemented.
    
    ![Authentication-2](https://user-images.githubusercontent.com/24938159/84912462-17aea480-b0d7-11ea-8984-335db2c32250.JPG)
    
    - 3rd party Federation Providers:
+     * When the user tries to login, He will be redirected to Federation-Proxy, setup in perimeter & ADFS is running on On-Premise servers.
+     * ADFS checks with AD to validate the credentials before acknowledging the client-request.
+     * Mean while as usual, AD-Connect syncs up data every 2 minutes with On-Prim AD.
+     
    ![Authentication-Fd-3](https://user-images.githubusercontent.com/24938159/84912332-f77ee580-b0d6-11ea-9c31-708f30450cca.JPG)
     
 

@@ -67,6 +67,11 @@
        
    ### 7. Configure self-service password reset 
    
+   ADD -> Password Reset 
+   * Properties: enable self-service password reset for All/Selected/None
+   * Authentication Menthods : Select methods (mobile/email/ofc phone/security qns)
+                           
+    
    ### 8. NOT: Azure AD Connect; PIM
 
 

@@ -36,8 +36,45 @@
    * 10,000 management groups can be supported in a single directory(AAD).
    * By default, the root management group's display name is Tenant root group. The ID is the Azure Active Directory ID. It can not be deleted/moved.
 
-
+  ![Management-grp-1](https://user-images.githubusercontent.com/24938159/85438382-8d1fe680-b5a9-11ea-8aaa-0c44f932acf4.JPG)
    
+### 7.3 Expected Tasks on MG:
+   
+   1. Create/Delete/Rename MG 
+   2. Move MG under another MG
+   3. Add subscription to MG
+
+#### Create Management Group
+
+   * Through Power Shell [commands](https://docs.microsoft.com/en-us/powershell/module/az.resources/new-azmanagementgroup?view=azps-4.3.0)
+   
+   ```sh 
+    # Create MG under root MG
+    $ New-AzManagementGroup -GroupName 'Contoso' -DisplayName 'Contoso Group'
+    
+    # Create under a different Parent MG
+    $ $parentGroup = Get-AzManagementGroup -GroupName Contoso
+    $ New-AzManagementGroup -GroupName 'ContosoSubGroup' -ParentId $parentGroup.id
+   ```
+
+   * Through Azure CLI [commands](https://docs.microsoft.com/en-us/cli/azure/account/management-group?view=azure-cli-latest#az-account-management-group-create)
+   
+   ```sh
+    # Create MG under root MG
+    $ az account management-group create --name Contoso --display-name 'Contoso Group'
+    
+    # Create under a different Parent MG
+    $ az account management-group create --name ContosoSubGroup --parent Contoso
+   ```
+   
+#### Delete Management Group
+
+
+
+## IMP from Interview Point of View
+### Challeneges in MG: 
+ * [Link-1](https://docs.microsoft.com/en-us/azure/governance/management-groups/overview#trouble-seeing-all-subscriptions)
+
    
    
    

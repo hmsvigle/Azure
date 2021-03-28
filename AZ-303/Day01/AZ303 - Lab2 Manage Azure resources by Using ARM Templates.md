@@ -20,9 +20,13 @@ Import-Module -name Az
 
 Now that you explored the basic Azure administration capabilities associated with provisioning resources and organizing them based on resource groups by using the Azure portal, you need to carry out the equivalent task by using Azure Resource Manager templates.
 
-Objectives
-In this lab, you will:
+#### Objectives
 
-Task 1: Review an ARM template for deployment of an Azure managed disk
-Task 2: Create an Azure managed disk by using an ARM template
-Task 3: Review the ARM template-based deployment of the managed disk
+* Task 1: Review an ARM template for deployment of an Azure managed disk
+  ```sh
+  # Create Managed Disk Resource:
+  * In Azure Portal, create resource -> Managed Disk (hp-az104-03a-disk1) -> Craete new RG (hp-az104-03a-rg1 - EAST US) -> Standard HDD -> 4GB -> "No tags" -> Create
+  * Now Go to RG: hp-az104-03a-rg1 -> Move -> Resource to another RG -> Select Disk(hp-az104-03a-disk1) -> Select Diff RG 
+  ```
+* Task 2: Create an Azure managed disk by using an ARM template
+* Task 3: Review the ARM template-based deployment of the managed disk

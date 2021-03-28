@@ -112,3 +112,8 @@
 * implement Azure SQL Database managed instances
 * configure HA for an Azure SQL database
 * publish an Azure SQL database
+
+
+### `Rerefence_Links:`
+* [labs_Recordings:](https://github.com/MicrosoftLearning/Lab-Demo-Recordings)
+* [AZ-303-LearningGit:](https://github.com/MicrosoftLearning/AZ-303-Microsoft-Azure-Architect-Technologies)

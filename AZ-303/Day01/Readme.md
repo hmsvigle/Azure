@@ -38,24 +38,13 @@
 * The `Location of RG` can be and `Location of Resources` within that resource group can be different.
 * Once we create the RG, we Cant update the `Location` / `Domain Name of AD tenant`. 
 * But we can assign `Alternative Domain name to Tenant`
+* 
 
-> Ref_Links:
+> **Ref_Links:**
 * [Topology](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-topologies)
 
-```sh
-Resource group: 
+### How to create the resources/what are the ways I can create my resources?
 
-project1---> prjeusrg1 (Users1, user2, user3) ---> VM, DB, Storage acct
-project2---> prjeusrg2 (User4, user4, user5) ---> VM, DB
-project3
-project4
-```
-
-
-===================
-
-How to create the resources/what are the ways I can create my resources?
-=========================================================================
 1. Portal (portal.azure.com): GUI
 2. PowerShell (Install Az module) on local machine
 3. ARM Template: JSON template. IaaC (Infrastructure as a code)
@@ -65,7 +54,7 @@ How to create the resources/what are the ways I can create my resources?
 5. SDKs
 
 
-Powershell
+### Powershell
 
 1. Powershell
 2. Powershell ISE (Intellisense inbuilt into it)

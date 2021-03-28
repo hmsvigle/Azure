@@ -1,4 +1,4 @@
-# AZ303
+# AZ-303 (Microsoft Azure Architect)
 
 * Azure has more than 55+ regions where you can deploy your resources.
 * Every region = atleast 1 + datacenters. These datacenters are called as availability zones.
@@ -42,15 +42,16 @@
 
 > **Ref_Links:**
 * [Topology](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-topologies)
+* For Certification, Awareness about all `Powershell`/`Az-cli`/`ARM template` is necessary.  
 
 ### How to create the resources/what are the ways I can create my resources?
 
 1. Portal (portal.azure.com): GUI
 2. PowerShell (Install Az module) on local machine
-3. ARM Template: JSON template. IaaC (Infrastructure as a code)
+3. ARM Template: JSON template. IAAC (Infrastructure as a code):- `Multiple Resources at once`
 4. Azure cloud shell 
-	a. PowerShell: if you are windows guy and comfortable with using Powershell. By default you have Az module installed.
-	b. Bash: If you are a linux guy and comfortable with linux bash shell
+   * PowerShell: if you are windows guy and comfortable with using Powershell. (By default you have Az module installed)
+   * Bash: If you are a linux guy and comfortable with linux bash shell
 5. SDKs
 
 

@@ -1,18 +1,20 @@
-# Azure AD Subscription 
+# AZ303
+
+* Azure has more than 55+ regions where you can deploy your resources.
+* Every region = atleast 1 + datacenters. These datacenters are called as availability zones.
+* Azure Provides all IaaS, PaaS, SaaS Platforms/Services
+
+## Azure AD Subscription:
+
+### What is Azure AD?
+* Directory where you can create/sync users and allow them to access different resources.
+* For every individual subscription, there will be a separate azure ad tenant created by default.
+* One AD Forest can be synchronized to only 1 AD Tenant. 
+  * To Sync multiple Subscriptions to AD Forest, 2 Subscriptions can be synced to Single AD Tenant. 
+  * Then that AD Tenant can be synched to AD forest 
 
 
-AZ303
-=========
-Azure has more than 55+ regions where you can deploy your resources.
 
-Every region = atleast 1 + datacenters. These datacenters are called as availability zones.
-
-IaaS, PaaS, SaaS ---> AZURE
-
-For every individual subscription, there will be a separate azure ad tenant created by default.
-
-What is Azure AD?
-Directory where you can create/sync users and allow them to access different resources.
 
 Why multiple subscriptions?
 1. PROD subscriptions

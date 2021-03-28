@@ -7,36 +7,36 @@
 ## Azure AD Subscription:
 
 ### What is Azure AD?
-* Directory where you can create/sync users and allow them to access different resources.
+* Azure AD is a Directory where you can create/sync users and allow them to access different resources.
 * For every individual subscription, there will be a separate azure ad tenant created by default.
 * One AD Forest can be synchronized to only 1 AD Tenant. 
-  * To Sync multiple Subscriptions to AD Forest, 2 Subscriptions can be synced to Single AD Tenant. 
-  * Then that AD Tenant can be synched to AD forest 
+  * To Sync multiple Subscriptions to AD Forest, `2/more Subscriptions can be synced to Single AD Tenant`. 
+  * Then that AD Tenant can be synched to AD forest.
+  * Normaly Organizations would be having multiple subscriptions. 
+  
+### Why multiple subscriptions? 
+* To segregate workloads like: 
+  1. PROD subscriptions
+  2. QA subscriptions
+  3. STAGE subscriptions
+  4. DEV subscriptions
+  5. MANAGEMENT WORKLOAD subscriptions
+  6. Training Subscription
+
+### How to move azure subscriptions between azure ad tenants?
+  1. Contact MS
+  2. EA (Enterprise agreeement): `ea.azure.com`
 
 
+## Resources:
+	Anything you create on azure platform is called as a resource ex. VM, DB, Storage account.
 
+* Any resource you want to create in azure, you need 2 things:
+	1. Subscription
+	2. Resource group
 
-Why multiple subscriptions?
-1. PROD subscriptions
-2. QA subscriptions
-3. STAGE subscriptions
-4. DEV subscriptions
-5. MANAGEMENT WORKLOAD subscriptions
-
-How to move azure subscriptions between azure ad tenants?
-1. Contact MS
-2. EA (Enterprise agreeement)
-ea.azure.com
-
-
-Resource
-========
-Anything you create on azure platform is called as a resource ex. VM, DB, Storage account.
-
-
-Any resource you want to create in azure, you need 2 things:
-1. Subscription
-2. Resource group
+> Ref_Links:
+* [Topology](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-topologies)
 
 Resource group: Logical container that allows you to group resources all together. 
 ===============

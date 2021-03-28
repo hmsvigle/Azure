@@ -29,24 +29,29 @@
 
 
 ## Resources:
+	Logical container that allows you to group resources all together. 
 	Anything you create on azure platform is called as a resource ex. VM, DB, Storage account.
 
 * Any resource you want to create in azure, you need 2 things:
 	1. Subscription
 	2. Resource group
+* The `Location of RG` can be and `Location of Resources` within that resource group can be different.
+* Once we create the RG, we Cant update the `Location` / `Domain Name of AD tenant`. 
+* But we can assign `Alternative Domain name to Tenant`
 
 > Ref_Links:
 * [Topology](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-topologies)
 
-Resource group: Logical container that allows you to group resources all together. 
-===============
+```sh
+Resource group: 
+
 project1---> prjeusrg1 (Users1, user2, user3) ---> VM, DB, Storage acct
 project2---> prjeusrg2 (User4, user4, user5) ---> VM, DB
 project3
 project4
+```
 
 
-The location of resource group can be anything and location of resource that you are creating within that resource group can be different.
 ===================
 
 How to create the resources/what are the ways I can create my resources?

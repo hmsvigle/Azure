@@ -60,6 +60,15 @@
 1. Powershell
 2. Powershell ISE (Intellisense inbuilt into it)
 
+| Powershell | Az-cli |
+|------------| ------ |
+| [Command_Link](https://docs.microsoft.com/en-us/powershell/module/az.compute/new-azdisk?view=azps-5.7.0) | [Command_Link](https://docs.microsoft.com/en-us/cli/azure/group?view=azure-cli-latest#az_group_show)|
+| Starting letter is Caps & next is small | all are in small letters |
+| Variable assignment doesnt need single quote `X` = `value`| variable assignment should in single quotes i.e `x`=`'value'`| 
+| Space before/after `=` was allowed |  No space before/after `=` |
+| command break to next line with  ' | command break to next line with `\` |
+ 
+
 ### Lab:
 
 * [Lab01](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_03a-Manage_Azure_Resources_by_Using_the_Azure_Portal.md)

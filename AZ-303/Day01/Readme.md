@@ -60,7 +60,8 @@
 1. Powershell
 2. Powershell ISE (Intellisense inbuilt into it)
 
-
+### Lab:
+* [Lab01](./AZ303-Lab01-Manage_Azure_resources_by_ARM_Templates.md)
 
 
 

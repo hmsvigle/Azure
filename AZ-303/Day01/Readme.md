@@ -1,4 +1,4 @@
-# AZ-303 (Microsoft Azure Architect)
+# [Day-01]()
 
 * Azure has more than 55+ regions where you can deploy your resources.
 * Every region = atleast 1 + datacenters. These datacenters are called as availability zones.

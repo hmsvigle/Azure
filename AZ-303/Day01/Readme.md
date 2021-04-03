@@ -64,6 +64,8 @@
 
 * [Lab01](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_03a-Manage_Azure_Resources_by_Using_the_Azure_Portal.md)
 * [Lab02](./AZ303-Lab01-Manage_Azure_resources_by_ARM_Templates.md)
+* [Lab03](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_03c-Manage_Azure_Resources_by_Using_Azure_PowerShell.md)
+* [Lab04](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_03d-Manage_Azure_Resources_by_Using_Azure_CLI.md)
 
 
 

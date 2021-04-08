@@ -26,7 +26,7 @@
 
 #### 1. Connectivity between 2 subnets in same VNET:
   * In a same VNET, All subnets can talk to each other by default.
-  * Security (restriction between ) can be applied using NSG (Network security group) to restrict conectivity between NSG.
+  * Security (restriction between ) can be applied using `NSG (Network security group)` to restrict conectivity between Subnets in single VNET.
     ```sh
       VNET1: 
 	     SN1: VM1
@@ -58,7 +58,7 @@
        VNET1: Azure/On-prem
     ```
 #### 6. Hub and spoke model : 
-  * 
+  * Appliances
 
   ![image](https://user-images.githubusercontent.com/24938159/113958111-1ef99700-983e-11eb-9717-6327d7fdfae7.png)
   

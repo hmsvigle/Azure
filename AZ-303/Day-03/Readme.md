@@ -38,7 +38,7 @@
     * VPN Connections
     ```sh
       VNET1: VM1
-	     VNET2: VM2
+      VNET2: VM2
     ```
 #### 3. Connectivity between On-Prem Network & Azure VNETs: 
   * To Allow connection between 2 VNETS of On-Prem & Azure :
@@ -49,11 +49,18 @@
   * To Allow connection between 2 Cloud Platforms, this option is provided only Azure.
     * VPN Connection (Site to site connection)
     ```sh
-	       VPC1: AWS/GCP
-	       VNET1: Azure
-	   ```
+       VPC1: AWS/GCP
+       VNET1: Azure
+    ```
 #### 5. You have remote users (sales people) who want to connect to your on-prem/Azure network
   * Point to site VPN Connection
-  ```sh
-	     VNET1: Azure/On-prem
-	 ```
+    ```sh
+       VNET1: Azure/On-prem
+    ```
+#### 6. Hub and spoke model : 
+  * 
+
+  ![image](https://user-images.githubusercontent.com/24938159/113958111-1ef99700-983e-11eb-9717-6327d7fdfae7.png)
+  
+  
+

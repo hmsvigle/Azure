@@ -1,3 +1,16 @@
+
+## Azure App service Types
+  * Azure App Service is a fully managed web hosting service for building web apps. 
+  * It is to Quickly build web application in cloud using any framework/language. 
+  * Easy migration to next environment with minimum downtime even in production environment.
+  * All types of App Services would require a `App Service Plan`, which will spin up a managed VM for the code to run.
+  
+**Types of Azure App Services:**
+1. Web Apps
+2. Mobile Apps
+3. Logic Apps
+4. API Apps
+
 ## App service  plan
   - Underlying Infra (It can be one or more VMs)
   - PaaS, no patches, no updates, no OS
@@ -9,14 +22,6 @@
   - Benefits of app services
 	- Multiple language support
 	- Optimize for devops with integration support with azure devops, github, VSTS, etc.
-
-## Azure App service Types
-
-1. Web Apps
-2. Mobile Apps
-3. Logic Apps
-4. API Apps
-
 
 Steps
 -------

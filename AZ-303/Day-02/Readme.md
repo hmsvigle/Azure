@@ -23,7 +23,17 @@
  * It has a **Web Application Firewall** (WAF)
  * SSL Termination 
  * Host & Path based routing of Traffic
+
+<img src="https://user-images.githubusercontent.com/24938159/116225586-a5cfce80-a76f-11eb-94ad-45b1e8261d5d.png" width="500" >
+
+ **Content Delivery Network (CDN) :**
+  * Deliver web content to user (To the near by zones)
+  * This is required to minimize latency
+  * POP(Point of Presence) Location 
+
  
+<img src="https://user-images.githubusercontent.com/24938159/116225406-686b4100-a76f-11eb-8f84-c5b703a51344.png" width="500" >
+
 
 ### Availability-Set Vs Availability-Zone:
 

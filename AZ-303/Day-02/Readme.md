@@ -1,6 +1,18 @@
 
 # [Day-02]()
 
+## Networking
+ * Virtual Network
+ * LoadBalancer
+ * VPN Gateway
+ * Application Gateway
+ * Current Deivery Network
+
+### Azure Virtual Network (Azure VN)
+* VN  --> Subnets (split it into segments)
+* traffic can be controlled at VN/Subnet label.
+* network filtering can be done through nsg/asg(application security groups)
+
 ### Availability-Set Vs Availability-Zone:
 
 |Availability-Set|Availability-Zone|

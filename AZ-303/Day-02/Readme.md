@@ -13,6 +13,9 @@
 * traffic can be controlled at VN/Subnet label.
 * network filtering can be done through nsg/asg(application security groups)
 
+<img src="https://user-images.githubusercontent.com/24938159/116216134-eb879980-a765-11eb-9009-eb0083c59718.png" width="400">
+
+
 ### Availability-Set Vs Availability-Zone:
 
 |Availability-Set|Availability-Zone|

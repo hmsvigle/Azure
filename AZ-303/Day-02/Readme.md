@@ -17,6 +17,13 @@
 
 <img src="https://user-images.githubusercontent.com/24938159/116223629-57213500-a76d-11eb-89b4-041f56332d8e.png" width="500">
 
+**Application Gateway :**
+ * Its a high-performance Loadbalancer
+ * Mainly for Web-traffic load balancer
+ * It has a **Web Application Firewall** (WAF)
+ * SSL Termination 
+ * Host & Path based routing of Traffic
+ 
 
 ### Availability-Set Vs Availability-Zone:
 

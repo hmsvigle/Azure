@@ -20,7 +20,7 @@
     *   192.168.0.1 --> Router IP
     *   192.168.0.2 --> DHCP
     *   192.168.0.3 --> Future Use
-    *   192.168.0.4 -- 192.168.0.254  --> Available for Use
+    *   192.168.0.4 -- 192.168.0.254  --> Available for Use 
 
 ### Types of Connections:
 

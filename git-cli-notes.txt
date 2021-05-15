@@ -1,0 +1,34 @@
+$ git remote add az303 https://github.com/hmsvigle/Azure.git
+
+$ git remote -v
+az303   https://github.com/hmsvigle/Azure.git (fetch)
+az303   https://github.com/hmsvigle/Azure.git (push)
+
+$ git fetch origin
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+Please make sure you have the correct access rights
+and the repository exists.
+
+$ git remote
+az303
+
+$ git fetch az303
+remote: Enumerating objects: 428, done.
+remote: Counting objects: 100% (428/428), done.
+remote: Compressing objects: 100% (380/380), done.
+remote: Total 428 (delta 161), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (428/428), 33.06 MiB | 3.54 MiB/s, done.
+Resolving deltas: 100% (161/161), done.
+From https://github.com/hmsvigle/Azure
+ * [new branch]      Az-303-My-Notes-V2 -> az303/Az-303-My-Notes-V2
+ * [new branch]      master             -> az303/master
+
+$ git branch -a
+  remotes/az303/Az-303-My-Notes-V2
+  remotes/az303/master
+
+$ git checkout -b Az-303-My-Notes-V2 az303/Az-303-My-Notes-V2
+Switched to a new branch 'Az-303-My-Notes-V2'
+Branch 'Az-303-My-Notes-V2' set up to track remote branch 'Az-303-My-Notes-V2' from 'az303'.
+

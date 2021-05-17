@@ -10,7 +10,7 @@
 * configure logging for workloads
 ### 1.2 Initiate automated responses by using Action Groups
 * configure and manage advanced alerts
-* Implement storage accounts
+* [Implement storage accounts](./Docs/01/1.2/storage_account.md)
 * select storage account options based on a use case
 * configure Azure Files and blob storage
 * configure network access to the storage account

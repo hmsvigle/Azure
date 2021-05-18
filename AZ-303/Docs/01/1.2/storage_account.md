@@ -62,3 +62,14 @@
   * Hot (Apears while creating SA)
   * Cool (Apears while creating SA)
   * Archive (Option apear at blob lavel)
+    * We cant access data directly in this access tier. 
+    * To access data, we need to change the tier from Archive --> Hot/Cool. This takes Standard(upto 15hrs)/Hot(1hr for 10Gb of data)
+  
+  Life Cycle Management for Storage-Account:
+  * SA -> Blob-serice -> LifeCycleManagement -> Add rule
+    * eg: - If blobs not acccessed in lastr 30 days, it changes into Hot by default.
+    
+
+ 
+ 
+ 

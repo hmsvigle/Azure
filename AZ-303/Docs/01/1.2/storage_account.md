@@ -79,4 +79,7 @@
   * Premium -> Account Kind(Storage Purpose v2) --> its for VM HDDs storage. Performance will be enhanced. But no hot/cold/archive kind of option for blob will NOT be available.
   * Premium -> Account Kind(Block Blob Storage) --> High performance for Blob storage
   * Premium -> Account Kind(File storage) --> High performance for File storage
- 
+
+> **Notes:**
+* Account Type: `General Purpose V2` --> storage accounts with VM HDD can be stored, ZRS is applicable only in this Account Type. 
+* 

@@ -70,6 +70,13 @@
     * eg: - If blobs not acccessed in lastr 30 days, it changes into Hot by default.
     
 
+  Change Replication for SA: (LRS -> ZRS)
+  * Manual Migration: Might be downtime & few might not be possible for us to achive
+  * Config Update: SA-> Configuration -> Change Replication to ZRS/GRS/RA-GRS
  
- 
+  Performance in SA:
+  * While creating SA, we can select Storage_Account Performance (Standard/Premium).
+  * Premium -> Account Kind(Storage Purpose v2) --> its for VM HDDs storage. Performance will be enhanced. But no hot/cold/archive kind of option for blob will NOT be available.
+  * Premium -> Account Kind(Block Blob Storage) --> High performance for Blob storage
+  * Premium -> Account Kind(File storage) --> High performance for File storage
  

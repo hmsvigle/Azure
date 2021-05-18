@@ -82,4 +82,5 @@
 
 > **Notes:**
 * Account Type: `General Purpose V2` --> storage accounts with VM HDD can be stored, ZRS is applicable only in this Account Type. 
+* Only Blob serice allows to achrive the data.
 * 

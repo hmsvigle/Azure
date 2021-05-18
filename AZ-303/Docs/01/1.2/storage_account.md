@@ -21,8 +21,6 @@
     * Copy azure key1 from portal: storage-account -> access keys -> copy key/name & configure to storage explorer to handle further modifications.
 
 
-
-
 * Authorize user/app to access services in storage account:
   1. `Access Keys`:
     * Under SA -> Access Keys -> show keys
@@ -53,3 +51,14 @@
   * 3rd Pref: Access Keys (Last)
 
    
+* [Storage Account Replication](https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy): 
+  * LRS
+  * ZRS
+  * GRS
+  * GZRS
+  * RA-GZRS
+
+* Access Tiers:
+  * Hot (Apears while creating SA)
+  * Cool (Apears while creating SA)
+  * Archive (Option apear at blob lavel)

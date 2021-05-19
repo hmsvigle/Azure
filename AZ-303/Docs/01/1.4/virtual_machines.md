@@ -11,7 +11,6 @@
     
     ![image](https://user-images.githubusercontent.com/24938159/118667406-a0672080-b811-11eb-83ff-1ecc262c605e.png)
 
-    
   * **VM Scale Sets:**
     * VM Scale Set is the resource, which starts with min set of VMs & can extend upto a Max no of identical VMs.
     * How to balance loads betwn multiple VMs, Scale Set is used i.e `Auto sclaing up/down` of the VMs based on some conditions.
@@ -21,10 +20,13 @@
     * Scaleset is basically tied up with LB. So new requests to newly scalled VMs, will be routed from the LB of scale set.
     * While creating Scale set, we can select multiple Av_Zones, so that the scalled VMs will be spinned in diff zones.
     
-
    ![image](https://user-images.githubusercontent.com/24938159/118679964-f93bb680-b81b-11eb-80b9-fec1a5861a83.png)   
 
-  * 
+  * **Dedicated Host:**
+    * Large organizations can opt for dedicated host i.e entire underlying hardware, where they can host thier own VMS. 
+    * They can control the downtime/any maintenance activity related to that host.
+    * No other company can host thier VM onto those dedicated hosts.
+    * Min requirement is to subscribe for 96vcpus allocated to subscription.
 
 ### 1.4.3 Select virtual machine size:
 

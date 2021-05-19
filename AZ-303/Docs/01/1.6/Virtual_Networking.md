@@ -11,3 +11,8 @@
       *  Static IP Address
       *  NSG is required to restrict traffic
       *  ZRS is Default
+
+### IP Addressing:
+  * IP has 10.0.0.5 --> each bit consists of 8 bits i.e [0000 1010] . [0000 0000] . [0000 0000] . [0000 0101] 
+  * CIDR = `10.0.0.0/24` --> 24 bits (1st three bits) are fixed & remaining (32-24) 8 bits can be adjusted to get the IPs, which can be assigned to VMS
+  * 

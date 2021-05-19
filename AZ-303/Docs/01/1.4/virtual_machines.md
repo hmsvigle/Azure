@@ -1,7 +1,8 @@
 # Virtual Machines:
 
 ### 1.4.1 High Availability for VM :
-  * Ideally SLA for VM - 99.9%, with Availability_Set: 99.95%, Availability Zones: 
+  * Ideally SLA for VM - 99.9%, with Availability_Set: 99.95%, Availability Zones: 99.99%
+  * No Additional cost for Av_Set/Av_Zones. Only the extra cost for communication among DCs in the Av_zones.
   * [**Availability Set vs Availability Zones**](https://github.com/hmsvigle/Azure/tree/Az-303-My-Notes-V2/AZ-303/Edureka/Day-02#availability-set-vs-availability-zone)
     * *[Suggestion]* If VM is part of Availability_Set => Use `Managed Disks` 
     * *[Suggestion]* Front-end & Back-end => Configure 2 diff availability Sets 
@@ -15,7 +16,11 @@
     * VM Scale Set is the resource, which starts with min set of VMs & can extend upto a Max no of identical VMs.
     * How to balance loads betwn multiple VMs, Scale Set is used i.e `Auto sclaing up/down` of the VMs based on some conditions.
     * Scale set allows to manage `identical VMs`
-    * It provides better redudancy for VMs
+    * It provides better redudancy for VMs.
+    * When Scaleset scales up the instance, the new VM will be only the replica of 1st, but the applications will not be installed/run on the other vm.
+    * Scaleset is basically tied up with LB. So new requests to newly scalled VMs, will be routed from the LB of scale set.
+    * While creating Scale set, we can select multiple Av_Zones, so that the scalled VMs will be spinned in diff zones.
+    
 
    ![image](https://user-images.githubusercontent.com/24938159/118679964-f93bb680-b81b-11eb-80b9-fec1a5861a83.png)   
 

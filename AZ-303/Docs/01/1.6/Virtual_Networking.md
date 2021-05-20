@@ -26,3 +26,18 @@
     * create NSG (select vnet) --> go to subnets --> Associate with Vnet & subnet --> Inbound/Outbound Security Rules --> Add rule for traffic.
   * **Application Security Group:** ASG can be assigned to VM(s) running the application. In NSG of DB-Vms, we can add rule for ASG only.
     * VNET -> { App-VM (ASG) ---> DB-VM (NSG) } ==> In NSG(db), add rule to allow traffic only from ASG(app), instead of adding Private IPs of all VMs(App). 
+
+### Usecase:
+
+<img src="https://user-images.githubusercontent.com/24938159/118947772-4aab8900-b975-11eb-9edd-da69545f81ad.png" width="600">
+
+* Deploy Vnet [10.0.0.0/16]
+* Deploy subnets :- SubnetA [10.0.1.0/24] &  jumpSubnetA [10.0.2.0/24]
+* Deploy jumpServer VM:
+  * Give Public IP
+  * Assign to jumpSubnetA
+  * Networking --> Add inbound Rule (1. Deny all from virtualnetwork & 2. Allow only Personal IP to specific port)
+* Deploy DemoVM to SubnetA
+  * Disable Public IP
+  * Networking --> Add inbound Rule (1. Deny all from virtualnetwork & 2. Allow only Private IP of jumpserver to specific port)
+     

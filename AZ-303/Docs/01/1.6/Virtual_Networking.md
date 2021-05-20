@@ -22,4 +22,7 @@
   * Azure by default blocks 5 IPs from every subnet for its own usage. so total 251 IPs are available.
   * > Note: If no VMs assigned to a subnet, then we can update the address space, if already some vms asigned, then we cant update subnet ip address.
   * **NIC:** - It assigns private / public IP to VM. We can have 2 NICs assigned to a VM; which can have only public & private IPs assigned to VM, so that public Ip can be internet facing & private IP can be used for internal communications.
-  * **NSG:**
+  * **NSG:** NSG can be `attached at Subnet/NIC layer.` 
+    * create NSG (select vnet) --> go to subnets --> Associate with Vnet & subnet --> Inbound/Outbound Security Rules --> Add rule for traffic.
+  * **Application Security Group:** ASG can be assigned to VM(s) running the application. In NSG of DB-Vms, we can add rule for ASG only.
+    * VNET -> { App-VM (ASG) ---> DB-VM (NSG) } ==> In NSG(db), add rule to allow traffic only from ASG(app), instead of adding Private IPs of all VMs(App). 

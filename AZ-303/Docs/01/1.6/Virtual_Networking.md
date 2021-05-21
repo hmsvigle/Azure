@@ -85,7 +85,13 @@
   <img src="https://user-images.githubusercontent.com/24938159/119116413-d7be1300-ba45-11eb-99cd-9ab92e95f7d2.png" width="600">
 
   
-  
+### Custom Routes:
+
+ * VM-A --> VM-B --> VM-C
+ * VM-B acting as Virtual-Appliance, i.e all the traffic to VM-C has to go through VM-B
+ * To achieve this, we need to have Custom Routing enabled i.e Custom Routing table has to be listed & routing packages also has to be installed.
+ * 
+   
 
 
 

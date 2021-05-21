@@ -105,7 +105,8 @@
 
 * By default VMs communication in single Vnet is allowable.
 * VM communication between 2 Vnets - Not possible by default
-* Solution : Vnet Peering
+* Solution : `Vnet Peering`
+* Vnet peering can be done between VNets of 2 Diff Regions / 2 diff subscriptions.
 * 
 
 

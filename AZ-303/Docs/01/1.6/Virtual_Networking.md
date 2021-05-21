@@ -58,14 +58,31 @@
   
   <img src="https://user-images.githubusercontent.com/24938159/119098388-670dfb00-ba33-11eb-8ef2-b03d2102365f.png" width="600">
 
-  * **Limitations**: Storage AC & Vnet, where application-VM is running, should be deployed in the same Resource-Group.
+  * **Limitations**: Storage AC & Vnet, where application-VM is running, should be deployed in the same `Region`.
   
 ### Service-Endpoint-Policy: 
+
   * What if there are multiple storage accounts in the same resourcegroup. And somebody is trying to exfiltrate data to another storage-ac as well. 
   * To restrict data exfiltration, we define service-endpoint-Policy to define what all stg-acc are allowed for the connection.
 
   <img src="https://user-images.githubusercontent.com/24938159/119099840-f071fd00-ba34-11eb-8b57-f7ebe74c74e9.png" width="600">
   
+### Private-Endpoint:
+
+  * Its like connecting to private IP of storage account in the same subnet. 
+  * With private end-point, the entire storage ac is assigned a nic (private ip from the subnet of app-VM). 
+  * Storage-Acc --> networking --> Private end-point --> Add --> select RG --> service(blob/...) --> vnet (where vm is deployed) --> Done
+  
+  <img src="https://user-images.githubusercontent.com/24938159/119117547-f5d84300-ba46-11eb-91d9-af4fcbbceb21.png" width="600">
+  
+
+  <img src="https://user-images.githubusercontent.com/24938159/119118186-99295800-ba47-11eb-8271-64361e64e215.png" width="600">
+
+  <img src="https://user-images.githubusercontent.com/24938159/119118531-ead1e280-ba47-11eb-970a-2b0ef2496125.png" width="600">
+  
+  * **Difference between Service-Endpoint & Private-Endpoint:**
+  
+  <img src="https://user-images.githubusercontent.com/24938159/119116413-d7be1300-ba45-11eb-99cd-9ab92e95f7d2.png" width="600">
 
   
   

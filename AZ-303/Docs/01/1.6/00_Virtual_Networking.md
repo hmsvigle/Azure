@@ -103,6 +103,10 @@
 
 ### 1.6.2 Virtual Network Peering:
 
+* By default VMs communication in single Vnet is allowable.
+* VM communication between 2 Vnets - Not possible by default
+* Solution : Vnet Peering
+* 
 
 
    

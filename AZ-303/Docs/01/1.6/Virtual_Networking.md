@@ -41,3 +41,36 @@
   * Disable Public IP
   * Networking --> Add inbound Rule (1. Deny all from virtualnetwork & 2. Allow only Private IP of jumpserver to specific port)
      
+### Service-EndPoints:
+
+* Normally when we try to access any Azure service (i.e Public IP of service) from a VM (private IP from a subnet of a Vnet), The private IP of VM translates into Public IP & connect to azure service public ip. 
+* So there is a transition from private network to Public internet & then back to establish connection. Its a Risky step. 
+* Hence, VNet `Service Endpoint` provides a secure and direct connectivity to Azure services. Here an optimized Route over Azure backbone Network opens up, which enables identies of the Azure service & subnet of VM. 
+  * We can add an Outbound rule in NSG of VM to allow connection to azure service (eg- storage ac). --> Vm's Private IP --> Public IP --> [*Possibility of glitch*] --> Azure Service 
+* Secure way to strictly enable direct route between VM & add Azure service is - Service-Endpoint.
+  * Enable Service-endpoint at VM (Vnet)
+  
+
+  <img src="https://user-images.githubusercontent.com/24938159/119098079-15657080-ba33-11eb-980f-0563e410664d.png" width="600">
+  
+  * Now add the Vnet to your storage account.
+  
+  
+  <img src="https://user-images.githubusercontent.com/24938159/119098388-670dfb00-ba33-11eb-8ef2-b03d2102365f.png" width="600">
+
+  * **Limitations**: Storage AC & Vnet, where application-VM is running, should be deployed in the same Resource-Group.
+  
+### Service-Endpoint-Policy: 
+  * What if there are multiple storage accounts in the same resourcegroup. And somebody is trying to exfiltrate data to another storage-ac as well. 
+  * To restrict data exfiltration, we define service-endpoint-Policy to define what all stg-acc are allowed for the connection.
+
+  <img src="https://user-images.githubusercontent.com/24938159/119099840-f071fd00-ba34-11eb-8b57-f7ebe74c74e9.png" width="600">
+  
+
+  
+  
+
+
+
+
+

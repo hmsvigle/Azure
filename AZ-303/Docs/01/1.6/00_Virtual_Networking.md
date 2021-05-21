@@ -108,11 +108,12 @@
 * Solution : `Vnet Peering`
 * Vnet peering can be done between VNets of 2 Diff Regions / 2 diff subscriptions.
 
- <img src="https://user-images.githubusercontent.com/24938159/119131474-29bb6480-ba57-11eb-9126-19b2919d61f9.png" width="600">
+ <img src="https://user-images.githubusercontent.com/24938159/119131474-29bb6480-ba57-11eb-9126-19b2919d61f9.png" width="500">
 
 
+ <img src="https://user-images.githubusercontent.com/24938159/119132539-75bad900-ba58-11eb-99cd-7c9f91caec16.png" width="500">
 
-   
+   * Staging-Vnet --> Peering --> Add peering. It creates peers at both sides.
 
 
 

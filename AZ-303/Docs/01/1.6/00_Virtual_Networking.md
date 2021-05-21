@@ -121,6 +121,10 @@
 
 <img src="https://user-images.githubusercontent.com/24938159/119146893-b6225300-ba68-11eb-990e-4e158267e848.png" width="500">
 
+* For P2S VPn connection, `VN Gateway` is required, which will deploy few VMs in a diff subnet i.e `GatewaySubnet`.
+* Finally those vms will play role in identifying the connection from client side workstation, using the public key configured into VPN Gateway.
+* Also the Client side Workstations should have Private key & VPN client configured. 
+
   **Certificates:**
   ```sh
   // To generate the root certificate

@@ -88,9 +88,24 @@
 ### Custom Routes:
 
  * VM-A --> VM-B --> VM-C
- * VM-B acting as Virtual-Appliance, i.e all the traffic to VM-C has to go through VM-B
- * To achieve this, we need to have Custom Routing enabled i.e Custom Routing table has to be listed & routing packages also has to be installed.
- * 
+   * VM-B acting as Virtual-Appliance, i.e all the traffic to VM-C has to go through VM-B
+   * Create a Route Table:
+     * Address space: entire VNet
+     * Target : Virtual Appliance i.e Pvt IP of `VM-B`
+   * Associate the Route Table with VM-A (associate with subnet of VM-A)
+   * Install Routing packages in VM-B to enable it as appliance.
+   * IP Forwarding for VM-B:
+     * VM-B --> NIC --> IP Config --> IP Forwarding (enable)
+   * Test the configuration:
+     * Install IIS in VM-C
+     * Try to access the URL of VM-C from VM-A
+
+
+### Virtual Network Peering:
+
+
+* 
+
    
 
 

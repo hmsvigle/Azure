@@ -84,6 +84,7 @@
   
   <img src="https://user-images.githubusercontent.com/24938159/119116413-d7be1300-ba45-11eb-99cd-9ab92e95f7d2.png" width="600">
 
+## 1.6.1 [Types of Conections:](https://github.com/hmsvigle/Azure/tree/Az-303-My-Notes-V2/AZ-303/Edureka/Day-03#types-of-connections)
   
 ### Custom Routes:
 
@@ -116,6 +117,7 @@
    * Staging-Vnet --> Peering --> Add peering. It creates peers at both sides.
 
 
+### 1.6.3 Pont-To-Site VPN Connection:
 
 
 

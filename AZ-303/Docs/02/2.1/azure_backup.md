@@ -17,7 +17,7 @@
 
 * **Backup Policy:**
 
-<img src="https://user-images.githubusercontent.com/24938159/119227183-54c2b880-bb2a-11eb-9d46-eb8722d7e46e.png" width="500">
+<img src="https://user-images.githubusercontent.com/24938159/119227183-54c2b880-bb2a-11eb-9d46-eb8722d7e46e.png" width="400">
 
 
 ### MARS Agent: (Micro. Recovery Service Agent)

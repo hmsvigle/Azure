@@ -150,3 +150,16 @@
   -Signer $cert -TextExtension @("2.5.29.37={text}1.3.6.1.5.5.7.3.2")
   ```
 
+### 1.6.4 Site-To-Site VPN Connection:
+
+* [ On-Prem VMs ]   <==={Secure Tunner}===>  [ Azure Network ]   ==> S2S VPN Conn
+* **Azure Side:**
+  * Deploy Gateway Subnet
+  * Deploy VM (private IP) on Subnet in Azure VNet
+  * Deploy VNet Gateway 
+  * Deploy Local Gateway
+* **On-Prem Network:**
+  * VM on On-Prem Vnet
+  * Install Roles & Routing packages on VM
+  * 
+

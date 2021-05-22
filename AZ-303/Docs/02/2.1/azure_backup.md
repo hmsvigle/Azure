@@ -9,9 +9,12 @@
  
 
 
-![image](https://user-images.githubusercontent.com/24938159/119226591-8a19d700-bb27-11eb-91a1-35d67aafa116.png)
+<img src="https://user-images.githubusercontent.com/24938159/119226591-8a19d700-bb27-11eb-91a1-35d67aafa116.png" width="600">
 
+* VM --> backup --> create/select existing recovery vault:
 
-![image](https://user-images.githubusercontent.com/24938159/119226972-6061af80-bb29-11eb-828e-0fc931804030.png)
+<img src="https://user-images.githubusercontent.com/24938159/119226972-6061af80-bb29-11eb-828e-0fc931804030.png" width="500">
 
-![image](https://user-images.githubusercontent.com/24938159/119227183-54c2b880-bb2a-11eb-9d46-eb8722d7e46e.png)
+* **Backup Policy:**
+
+<img src="https://user-images.githubusercontent.com/24938159/119227183-54c2b880-bb2a-11eb-9d46-eb8722d7e46e.png" width="500">

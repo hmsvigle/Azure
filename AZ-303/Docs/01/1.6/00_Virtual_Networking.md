@@ -156,10 +156,17 @@
 * **Azure Side:**
   * Deploy Gateway Subnet
   * Deploy VM (private IP) on Subnet in Azure VNet
-  * Deploy VNet Gateway 
-  * Deploy Local Gateway
+  * Deploy `VNet Gateway`:
+    * Select Higher SKU i.e `Vpngw2`, it gives more options like authentication techniques
+    * Under tab `Connection` --> Add Connection --> `S2S Conection` --> Select Gateway Subnet --> Select Local Gateway --> enter `secret key` (Remember this) --> Done
+  * Deploy `Local Gateway`: 
+    * Represents N/w infrastructure layout of On-Prem
+    * Public IP of On-Prem @ Local-Gateway config
+    * IP range of On-Prem VMs @ Local-Gateway config
+  
 * **On-Prem Network:**
   * VM on On-Prem Vnet
   * Install Roles & Routing packages on VM
+  * To identify Azure-Network infra, It has to connect to Pub-IP of VN Gateway
   * 
 

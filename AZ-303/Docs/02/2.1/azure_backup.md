@@ -22,3 +22,6 @@
 
 ### MARS Agent: (Micro. Recovery Service Agent)
 
+* Deploy the `Recovery Service Vault` on the RG. 
+* 
+

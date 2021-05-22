@@ -17,9 +17,10 @@
 ### 1.5.1 Save a deployment as an ARM template: 
 
 * After deployment of resource --> Export Template --> Download the template
-* 
 
 ### 1.5.2 Modify Azure Resource Manager template
+
+* Edit Parameters: 
 
 ### 1.5.3 Evaluate location of new resources
 

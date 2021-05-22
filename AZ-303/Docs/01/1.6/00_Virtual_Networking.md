@@ -125,7 +125,15 @@
 * Finally those vms will play role in identifying the connection from client side workstation, using the public key configured into VPN Gateway.
 * Also the Client side Workstations should have Private key & VPN client configured. 
 
-  **Certificates:**
+* **Azure Side Steps:**
+  * Create a VNET & SubnetA --> Deploy a VM
+  * VNET --> subnet --> Subnet Gateway --> Define IP ranges & Create
+  * Deploy VN Gateway --> attach to the Subnet Gateway (created above) --> define public IP --> Submit
+  * For P2S configuration in VN Gateway, Public key of self-signed certificate is required.
+  * 
+
+* **Client side Certificates:**
+
   ```sh
   // To generate the root certificate
   $cert = New-SelfSignedCertificate -Type Custom -KeySpec Signature `

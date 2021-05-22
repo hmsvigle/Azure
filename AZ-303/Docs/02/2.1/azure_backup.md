@@ -13,11 +13,11 @@
 
 * VM --> backup --> create/select existing recovery vault:
 
-<img src="https://user-images.githubusercontent.com/24938159/119226972-6061af80-bb29-11eb-828e-0fc931804030.png" width="500">
+<img src="https://user-images.githubusercontent.com/24938159/119226972-6061af80-bb29-11eb-828e-0fc931804030.png" height="400" width="500">
 
 * **Backup Policy:**
 
-<img src="https://user-images.githubusercontent.com/24938159/119227183-54c2b880-bb2a-11eb-9d46-eb8722d7e46e.png" width="400">
+<img src="https://user-images.githubusercontent.com/24938159/119227183-54c2b880-bb2a-11eb-9d46-eb8722d7e46e.png" height="400" width="450">
 
 
 ### MARS Agent: (Micro. Recovery Service Agent)

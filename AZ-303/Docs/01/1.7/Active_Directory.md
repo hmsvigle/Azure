@@ -1,1 +1,33 @@
 ## [1.7 Azure Active Directory:](https://github.com/hmsvigle/Azure/blob/master/AZ-103-104/01-Azure-AD/01-Manage-Azure-AD-Objects.md)
+
+### 1.7.1 Add custom domains
+
+
+### 1.7.2 Configure Azure AD Identity Protection
+
+
+### 1.7.3 Implement self-service password reset
+
+
+### 1.7.4 Implement Conditional Access including MFA
+
+
+### 1.7.5 Configure user accounts for MFA
+
+
+### 1.7.6 Configure fraud alerts
+
+
+### 1.7.7 Configure bypass options
+
+
+### 1.7.8 Configure Trusted IPs
+
+
+### 1.7.9 Configure verification methods
+
+
+### 1.7.10 Implement and manage guest accounts
+
+
+### 1.7.11 Manage multiple directories

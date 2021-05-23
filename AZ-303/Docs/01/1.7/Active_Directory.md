@@ -22,10 +22,12 @@
 ### 1.7.2 Configure Azure AD Identity Protection
 
 * `Azure AD Premium P2` License is required
-
+* Add the Resource = `Azure AD Identity Protection` to Azure AD.
+* 
 <img src="https://user-images.githubusercontent.com/24938159/119258923-68812400-bbe9-11eb-9e92-5b8551255bbe.png" width="700">
 
-
+### 1.7.2.1 [Access Reviews:](https://docs.microsoft.com/en-us/azure/active-directory/governance/access-reviews-overview)
+* 
 
 
 ### 1.7.3 Implement self-service password reset

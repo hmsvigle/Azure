@@ -32,6 +32,16 @@
 * `Identity Governance` --> `Access Review` --> new --> `users`/`applications` --> Define policy
 * Based on the reviw policy set, reviewer will be notified to take action.
 
+### b. [Azure AD Connect:]()
+
+* `On-Prem` --> `AAD Connect` --> { Sync }  --> `Azure AD`
+* Install `AAD Connect Component` on On-Prem
+  * AAD Connect Component has to be installed on `Windows Server 2012 machine`
+  * `Azure AD Global Admin A/C` has to perform action on Azure AD.
+  * On-Prem, `Enterprise Admin A/c` should be used.
+* Its `Unidirectional Sync` of User data to Azure.
+* Azure AD Connect Component needs access to internet & Domain for resolution.
+* 
 
 ### 1.7.3 Implement self-service password reset
 

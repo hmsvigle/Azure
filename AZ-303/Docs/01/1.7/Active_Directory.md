@@ -26,10 +26,11 @@
 * 
 <img src="https://user-images.githubusercontent.com/24938159/119258923-68812400-bbe9-11eb-9e92-5b8551255bbe.png" width="700">
 
-### 1.7.2.1 [Access Reviews:](https://docs.microsoft.com/en-us/azure/active-directory/governance/access-reviews-overview)
+### a. [Access Reviews:](https://docs.microsoft.com/en-us/azure/active-directory/governance/access-reviews-overview)
 
 * To review access of users/applications, whether any user has changed department/need to be updated !! --> `Access Reviews`
-* `Identity Governance` --> New `Access Review` --> `users`/`applications` --> Define policy
+* `Identity Governance` --> `Access Review` --> new --> `users`/`applications` --> Define policy
+* Based on the reviw policy set, reviewer will be notified to take action.
 
 
 ### 1.7.3 Implement self-service password reset

@@ -1,5 +1,14 @@
 ## [1.7 Azure Active Directory:](https://github.com/hmsvigle/Azure/blob/master/AZ-103-104/01-Azure-AD/01-Manage-Azure-AD-Objects.md)
 
+* Azure AD Tenant (Daimler)
+    --> Default Directory (Mbrdi)
+    --> New Directory (MBRD- Germany)
+* 1 Azure Account 
+        --> Subscription-1 -- Department-1
+        --> Subscription-2 -- Department-2
+        --> Subscription-3 -- Department-3
+* At one point of time, `One Subscription` ==> Trust ==> `One Directory`
+
 ### 1.7.1 Add custom domains
 
 * In any website, create a custom DNS (domain name service).

@@ -3,7 +3,7 @@
 * Azure AD Tenant (Daimler)
   * --> Default Directory (Mbrdi)
   * --> New Directory (MBRD- Germany)
-* One Azure Account 
+* One Azure Account can have multiple subscriptions.
    * --> Subscription-1 -- Department-1
    * --> Subscription-2 -- Department-2
    * --> Subscription-3 -- Department-3

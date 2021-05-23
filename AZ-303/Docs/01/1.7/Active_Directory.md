@@ -2,6 +2,9 @@
 
 ### 1.7.1 Add custom domains
 
+* In any website, create a custom DNS (domain name service).
+* In Azure AD --> custom domains --> add custom domains --> `commitmenthub.com`
+  * Azure asks to create a temp domain in the same website with the details it provides --> to validate the new domain `commitmenthub.com`
 
 ### 1.7.2 Configure Azure AD Identity Protection
 

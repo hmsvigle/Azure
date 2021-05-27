@@ -13,5 +13,6 @@
 
 * **Azure Site Recovery Service:** Used to replicate data to secondary region to avoid any sort of disaster.
   *  `For VMS`: 
-
+    *  VM -> Disaster Recovery -> 
+    *  
 ### 2.1.4 implement Azure Update Management

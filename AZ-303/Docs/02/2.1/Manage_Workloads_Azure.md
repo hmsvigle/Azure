@@ -11,5 +11,7 @@
 
 ### 2.1.3 implement disaster recovery
 
+* **Azure Site Recovery Service:** Used to replicate data to secondary region to avoid any sort of disaster.
+  *  `For VMS`: 
 
 ### 2.1.4 implement Azure Update Management

@@ -1,4 +1,4 @@
-## [Bastion Host](https://docs.microsoft.com/en-us/azure/bastion/bastion-overview):
+## [2.2.9 Bastion Host](https://docs.microsoft.com/en-us/azure/bastion/bastion-overview):
 
 * Bastion Host works as jump server.
 * For security purpose, only Jump server should be exposed to Internet. Then from jump server, connectivity to internal app-servers should be allowed though rules in NSG/ASG.

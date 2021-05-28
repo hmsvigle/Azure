@@ -43,5 +43,21 @@
 ### 2.2.6 Implement the Azure Front Door Service:
 
 
-### 2.2.7 Implement Azure Traffic Manager:
+### 2.2.7 Implement Azure Traffic Manager (ATM):
 
+* DNS based Traffic routing
+* Routing methods:
+  * Priority: 
+  * Weightage: define % of traffic to route
+  * Performance: High Performance endpoint will get request
+  * Geografic: Closest endpoint (based on geo location), traffic will be routed.
+  * Multivalue: all end points are sent to client & Client decides where to connect to
+  * Subnet: Specific user IP addr will be sent to end points.
+
+* For ATM, App service plan should be - `Standard`.
+* Deploy 2 Webapps: Create web app resource in azure & Create `Webapp-Profile` & publish the local code to it.
+* Add Resource --> `Traffic Manager Profile` --> No location specified as its Global --> Deploy
+* Traffic Manager Profile --> EndPoint --> select webapp & define priority --> Done
+  *  If app is running on VM, a DNS name has to be added to it.
+  *  Endpoints should be healthy before getting added to ATM profile.
+  *  Endpoint settings :- configure to check endpoint

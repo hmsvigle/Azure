@@ -35,5 +35,16 @@
    <img src="https://user-images.githubusercontent.com/24938159/119919570-56f0a100-bf88-11eb-82e8-91c540b3ba48.png" width="600">
 
  
-### 2.1.4 implement Azure Update Management
+### [2.1.4 Implement Azure Update Management:](https://docs.microsoft.com/en-us/azure/automation/update-management/overview)
+
+* To manage OS upgrade in VMs, Azure Update Management service is used.
+* Log 
+
+
+<img src="https://user-images.githubusercontent.com/24938159/119972313-aefec600-bfcf-11eb-9d16-34ab5dba36d5.png" width="600">
+
+
+
+
+
 

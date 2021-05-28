@@ -8,4 +8,8 @@
 ### 2.2.2 Implement an application gateway:
 
 
-### 2.2.3 Implement the Azure Front Door Service:
+### 2.2.6 Implement the Azure Front Door Service:
+
+
+### 2.2.7 Implement Azure Traffic Manager:
+

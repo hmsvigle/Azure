@@ -24,15 +24,15 @@
 
 ### 2.2.2 Implement an application gateway:
 
-* Its a **Layer-7** LB
-* **SSL Termination** feature can be enabled at App Gateway --> No dencryption burdon on Application
-* **Session affinity** an be enabled
-* App Gateway gets deployed at **empty Subnet** 
-* **Path Based** Routing feature is available.
-* **Single/Multiple DNS** can be configured i.e **Host Based** routing.
-* Gateway can be **auto-scaled** based on load.
-* **Routing Rules** : `Basic` | `Path-Based`
-* **WAF** (Web App Firewall) can be enabled in App Gateway
+* Its a `Layer-7` LB
+* `SSL Termination` feature can be enabled at App Gateway --> No dencryption burdon on Application
+* `Session affinity` an be enabled
+* App Gateway gets deployed at `empty Subnet`
+* `Path Based` Routing feature is available.
+* `Single/Multiple DNS` can be configured i.e `Host Based` routing.
+* Gateway can be `auto-scaled` based on load.
+* Routing Rules : `Basic` | `Path-Based`
+* `WAF2` (Web App Firewall) can be enabled in App Gateway
 * Health-Probe & Backend-Pool feature is same as others.
 
 ### 2.2.6 Implement the Azure Front Door Service:

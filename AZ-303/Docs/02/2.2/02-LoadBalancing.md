@@ -32,6 +32,7 @@
 * **Single/Multiple DNS** can be configured i.e **Host Based** routing.
 * Gateway can be **auto-scaled** based on load.
 * **Routing Rules** : `Basic` | `Path-Based`
+* **WAF** (Web App Firewall) can be enabled in App Gateway
 * Health-Probe & Backend-Pool feature is same as others.
 
 ### 2.2.6 Implement the Azure Front Door Service:

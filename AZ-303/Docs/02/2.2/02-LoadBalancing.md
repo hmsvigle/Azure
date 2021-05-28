@@ -19,7 +19,8 @@
     * Must be part of Availability Set/Scaleset
 
   * Standard SKU:
-    * Multiple VMs, need not be part of Availabuility Set/Scaleset, But VMs must be `part of 1 VNET`
+    * Multiple VMs, need not be part of Availabuility Set/Scaleset, But VMs must be `part of 1 VNET`.
+    * Public IP to be assigned to Azure LB service, also should be of type Standard (not Basic).
 
 ### 2.2.2 Implement an application gateway:
 

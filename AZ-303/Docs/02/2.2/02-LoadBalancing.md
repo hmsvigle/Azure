@@ -35,6 +35,11 @@
 * `WAF2` (Web App Firewall) can be enabled in App Gateway
 * Health-Probe & Backend-Pool feature is same as others.
 
+### 2.2.3 Web Application Firewall:
+
+* New Resource -> WAF Policy -> 
+
+
 ### 2.2.6 Implement the Azure Front Door Service:
 
 

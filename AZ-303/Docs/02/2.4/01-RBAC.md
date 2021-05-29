@@ -23,4 +23,6 @@
 
 ### 2.4.2 Custom RBAC Role:
 
-* 
+* To create a Custom Role at RG: RG --> IAM --> Add Cuastom Role --> Start from (scratch)/json/existing --> select Permission (Compute) --> Select Action & Data Action.
+* Add Role Assignment --> Search for Custom role --> Select service principal --> Assign
+* To delete Role: IAM --> Roles --> select --> Remove.

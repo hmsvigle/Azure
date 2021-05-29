@@ -50,6 +50,9 @@
   * Priority: 
   * Weightage: define % of traffic to route
   * Performance: High Performance endpoint will get request
+    * `Real User Management:` This feature helps ATM understand the peformance of application/end-point
+      * in ATM, generate a `key`(a js code), which can be embeded into application.
+      * Key will provide metrics of end-points to ATM
   * Geografic: Closest endpoint (based on geo location), traffic will be routed.
   * Multivalue: all end points are sent to client & Client decides where to connect to
   * Subnet: Specific user IP addr will be sent to end points.

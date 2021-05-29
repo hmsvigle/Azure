@@ -14,6 +14,10 @@
 | Stateful - Understands what packet of data to be allowed                      |
 | Buil-in `Threat Intelligence` :- Deny Traffic for Malicious rqsts & send alerts |
 
+
+<img src="https://user-images.githubusercontent.com/24938159/120058727-ac9d7a00-c06a-11eb-9cba-0cf449714d4e.png" width="500">
+
+
 * Gets deployed in VNET in `AzureFirewallSubnet` 
 * Deploy Application to SubnetA --> Deploy Azure Firewall to `AzureFirewallSubnet` --> Assign Public-IP --> Done
 * Deploy a `Route Table` to App (SubnetA) --> rules to route to Azure Firewall.

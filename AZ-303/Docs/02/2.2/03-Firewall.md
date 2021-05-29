@@ -26,7 +26,15 @@
   * `Next Hop Address`: Private IP Address of Firewall
   * Any Request to Internet (0.0.0.0/0) --> Route to Firewall
 * Add `NAT Rules` at Firewall --> (Request from Internet -> VM) 
-  * 
+  * `Source IP`: Local laptop IP
+  * `Destination Address` & `Port`: Public IP & port(Unique) of Firewall. For 2nd Translated Add. add diff unique port
+  *  `Translated Adddress` & `Port` : Private IP & Port of VM
+* `Application Rule Collection` : Control Outbound Request from Firewall define Rules (eg - allow microsoft.com only)
+  * Firewall --> RUles --> Application Rule Collection --> Apply
+    * `Source IP` : VM's Private IP
+    * Protocol: 
+    * FQDN: www.microsoft.com
+    * 
 
 ### 2.2.5 Azure Firewall Manager:
 

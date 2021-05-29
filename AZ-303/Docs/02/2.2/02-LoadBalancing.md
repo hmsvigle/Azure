@@ -47,15 +47,15 @@
 
 * DNS based Traffic routing
 * Routing methods:
-  * Priority: 
-  * Weightage: define % of traffic to route
-  * Performance: High Performance endpoint will get request
+  * `Priority`: 
+  * `Weightage`: define % of traffic to route
+  * `Performance`: High Performance endpoint will get request
     * `Real User Management:` This feature helps ATM understand the peformance of application/end-point
       * in ATM, generate a `key`(a js code), which can be embeded into application.
       * Key will provide metrics of end-points to ATM
-  * Geografic: Closest endpoint (based on geo location), traffic will be routed.
-  * Multivalue: all end points are sent to client & Client decides where to connect to
-  * Subnet: Specific user IP addr will be sent to end points.
+  * `Geografic`: Closest endpoint (based on geo location), traffic will be routed.
+  * `Multivalue`: all end points are sent to client & Client decides where to connect to
+  * `Subnet`: Specific user IP addr will be sent to end points.
 
 * For ATM, App service plan should be - `Standard`.
 * Deploy 2 Webapps: Create web app resource in azure & Create `Webapp-Profile` & publish the local code to it.

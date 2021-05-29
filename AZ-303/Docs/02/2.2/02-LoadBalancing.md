@@ -40,14 +40,16 @@
 * New Resource -> WAF Policy -> 
 
 
-### 2.2.6 Implement the Azure Front Door Service:
+### 2.2.6 Azure Front Door Service:
 
+* * `Path Based Routing`: URL/`images`/* OR URL/`videos`/*
+* `Session Affinity` , `SSL Termination`, `WAF`
 
-### 2.2.7 Implement Azure Traffic Manager (ATM):
+### 2.2.7 Azure Traffic Manager (ATM):
 
 * DNS based Traffic routing
 * Routing methods:
-  * `Priority`: 
+    * `Priority`: 
   * `Weightage`: define % of traffic to route
   * `Performance`: High Performance endpoint will get request
     * `Real User Management:` This feature helps ATM understand the peformance of application/end-point
@@ -64,3 +66,4 @@
   *  If app is running on VM, a DNS name has to be added to it.
   *  Endpoints should be healthy before getting added to ATM profile.
   *  Endpoint settings :- configure to check endpoint
+

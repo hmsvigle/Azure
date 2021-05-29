@@ -20,3 +20,7 @@
     * This role allows to view recommendations and alerts, view security policies, view security states in `Azure Security Center`
   * **Security Admin:**
     * This role allows one to view security policies/security states/alerts/recommendations, dismiss alerts / recommendations in Azure Security Center & edit security policies.
+
+### 2.4.2 Custom RBAC Role:
+
+* 

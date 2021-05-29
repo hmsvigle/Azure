@@ -12,3 +12,5 @@
 ### 2.4.8 Azure BluePrints:
 
 
+<img src="https://user-images.githubusercontent.com/24938159/120071167-a1b70980-c0ab-11eb-9757-b9ca8d70a419.png" width="600">
+

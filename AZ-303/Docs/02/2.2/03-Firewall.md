@@ -14,5 +14,7 @@
 | Stateful - Understands what packet of data to be allowed                      |
 | Buil-in `Threat Intelligence` :- Deny Traffic for Malicious rqsts & send alerts |
 
+* Gets deployed in VNET in `AzureFirewallSubnet` 
+
 ### 2.2.5 Azure Firewall Manager:
 

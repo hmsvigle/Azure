@@ -38,3 +38,14 @@
 
 ### [2.2.5 Azure Firewall Manager:](https://docs.microsoft.com/en-us/azure/firewall-manager/overview)
 
+* Firewall Manager is a `Cetral` security Management service that provides `Central Security Policy` and `Route Management` for Multiple Firewalls.
+* Provides Security management for two network architecture types:
+  * Secured Virtual Hub:
+  * Hub VNET:
+* Features:
+  * Centrally deploy and configure multiple Azure Firewalls of Diff Zones & Subscriptions
+  * Centrally manage Multiple Global/Local Policies
+  * Integration with Third Party Security Services { VNet to Internet (V2I) , Branch to Internet (B2I) Traffic filtering }
+  * Centralized ROute management
+
+

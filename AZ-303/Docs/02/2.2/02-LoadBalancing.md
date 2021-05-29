@@ -42,8 +42,9 @@
 
 ### 2.2.6 Azure Front Door Service:
 
-* * `Path Based Routing`: URL/`images`/* OR URL/`videos`/*
+* `Path Based Routing`: URL/`images`/* OR URL/`videos`/*
 * `Session Affinity` , `SSL Termination`, `WAF`
+* `Priority` & `Weughtage`, Health-Probe for backend pools, 
 
 ### 2.2.7 Azure Traffic Manager (ATM):
 
@@ -67,3 +68,13 @@
   *  Endpoints should be healthy before getting added to ATM profile.
   *  Endpoint settings :- configure to check endpoint
 
+# Difference among all LBs
+
+| Azure Front Door                                             | Azure App gateway                       |
+|--------------------------------------------------------------|-----------------------------------------|
+| Features of App gateway + Traffic Manager                    |                                         |
+| Global Service: No Location required,   Multi-Region request | Regional Resource: Location is requierd |
+| No Empty Subnet required                                     | Empty Subnet - deploy app gateway       |
+| Path Based routing at Global lebel                           |                                         |
+| AFD --> 2 App gateways --> multiple   backend pools          |                                         |
+| AFD --> 2 Azure LB (Public Ips) -->   diff backend pools     |                                         |

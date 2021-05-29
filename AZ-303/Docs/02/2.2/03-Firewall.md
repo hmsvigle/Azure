@@ -1,10 +1,10 @@
 ## Firewall
 
-### 2.2.3 Implement a Web Application Firewall:
+### [2.2.3 (WAF) Web Application Firewall:](./02-LoadBalancing.md#223-web-application-firewall)
 
 
-### 2.2.4 Implement Azure Firewall:
+### 2.2.4 Azure Firewall:
 
 
-### 2.2.5 Implement Azure Firewall Manager:
+### 2.2.5 Azure Firewall Manager:
 

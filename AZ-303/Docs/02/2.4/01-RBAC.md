@@ -26,3 +26,8 @@
 * To create a Custom Role at RG: RG --> IAM --> Add Cuastom Role --> Start from (scratch)/json/existing --> select Permission (Compute) --> Select Action & Data Action.
 * Add Role Assignment --> Search for Custom role --> Select service principal --> Assign
 * To delete Role: IAM --> Roles --> select --> Remove.
+
+### 2.4.3 configure access to Azure resources by assigning roles
+### 2.4.4 configure management access to Azure
+### 2.4.5 interpret effective permissions
+### 2.4.6 set up and perform an access review

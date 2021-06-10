@@ -48,6 +48,15 @@
 
 ### 1.7.4 Implement Conditional Access including MFA
 
+* AAD -> Security -> MFA -> Cloud based MFA 
+  * Service Settings:
+    * Select Options of Cellphone/email/.../allow trust for 14 days
+  * User Settings:
+    * Enable MFA --> Once Logged in & Passwd Reset --> Enforced
+    * 
+* ADD --> Users -> Authentication Methods -> 
+              * -> Devices -> Add devices  
+
 
 ### 1.7.5 Configure user accounts for MFA
 

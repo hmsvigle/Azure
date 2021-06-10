@@ -60,7 +60,7 @@
 ### 1.7.5 Configure user accounts for MFA
 
 * [**Conditional Access policy:**](https://docs.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-azure-mfa?bc=/azure/active-directory/conditional-access/breadcrumb/toc.json&toc=/azure/active-directory/conditional-access/toc.json#create-a-conditional-access-policy)
-  * New -> Users & Groups -> select
+  * AAD -> Security -> Condional Access Policy -> New -> Users & Groups -> select
     * Access controls -> Grant Access to MFA 
  
 

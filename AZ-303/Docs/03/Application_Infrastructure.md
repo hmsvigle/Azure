@@ -27,17 +27,17 @@
 * Web App Service -> `Authentication` -> 
 * Web App Service -> `Backup` --> # App Service Plan should be `Standard/ Higher`
 * Web App Service -> `Scale up/down` at any point of time.
+
+
+
+### E. Configure networking for an App Service
+
 * Web App Service -> Networking --> 
   * `Vnet Config` : 
   * `Hybrid Config` : To connect to Onprem VMs 
   * `Azure Front Door + WAF` : Enable Firewall for Web App
   * `CDN` : Content Delivery Network for make data reachable to Customer based on Location.
   * `Access Restrictions` : Block certain IPs to acess Webapp
-
-
-
-### E. Configure networking for an App Service
-
 
 ### F. Create and manage deployment slots
 

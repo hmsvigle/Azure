@@ -14,6 +14,9 @@
 
 ### C. Create and configure an App Service plan
 
+* App Service Plans : Windows/Linux, Depends on the type of Webapp.
+* ALso It will be hosted on the same Region as Webapp Service
+
 
 ### D. Configure an App Service
 

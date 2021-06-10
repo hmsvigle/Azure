@@ -55,7 +55,7 @@
     * Enable MFA --> Once Logged in & Passwd Reset --> Enforced
     * 
 * ADD --> Users -> Authentication Methods -> 
-              * -> Devices -> Add devices  
+* ADD --> Users -> Devices -> Add devices  
 
 
 ### 1.7.5 Configure user accounts for MFA

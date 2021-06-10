@@ -57,9 +57,12 @@
 * ADD --> Users -> Authentication Methods -> 
 * ADD --> Users -> Devices -> Add devices  
 
-
 ### 1.7.5 Configure user accounts for MFA
 
+* [**Conditional Access policy:**](https://docs.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-azure-mfa?bc=/azure/active-directory/conditional-access/breadcrumb/toc.json&toc=/azure/active-directory/conditional-access/toc.json#create-a-conditional-access-policy)
+  * New -> Users & Groups -> select
+    * Access controls -> Grant Access to MFA 
+ 
 
 ### 1.7.6 Configure fraud alerts
 

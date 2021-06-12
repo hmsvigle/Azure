@@ -122,3 +122,5 @@
 ### `Rerefence_Links:`
 * [labs_Recordings:](https://github.com/MicrosoftLearning/Lab-Demo-Recordings)
 * [AZ-303-LearningGit:](https://github.com/MicrosoftLearning/AZ-303-Microsoft-Azure-Architect-Technologies)
+* Exam Notes & Tips: [SLA](https://azure.microsoft.com/en-in/support/legal/sla/summary/)
+  * 

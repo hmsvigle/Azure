@@ -1,4 +1,4 @@
-## Stirage Account:
+## Storage Account:
 
 * create resource -> create storage_account -> `Unique Name`
   * Performance: 

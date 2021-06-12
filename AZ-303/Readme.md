@@ -8,17 +8,19 @@
 * monitor cost
 * configure advanced logging
 * configure logging for workloads
-### 1.2 Initiate automated responses by using Action Groups
+* Initiate automated responses by using Action Groups
 * configure and manage advanced alerts
-* [Implement storage accounts](./Docs/01/1.2/storage_account.md)
+
+### 1.2 [Implement storage accounts](./Docs/01/1.2/storage_account.md)
 * select storage account options based on a use case
-* configure Azure Files and blob storage
+* configure Azure Files and Azure Blob storage
 * configure network access to the storage account
 * implement Shared Access Signatures and access policies
-### 1.3 implement Azure AD authentication for storage
+* implement Azure [AD authentication for storage]()
 * manage access keys
-* implement Azure storage replication
-* implement Azure storage account failover
+* implement [Azure storage replication]()
+* implement [Azure storage account failover]()
+
 ### 1.4 Implement VMs for Windows and Linux
 * configure High Availability
 * configure storage for VMs
@@ -26,26 +28,26 @@
 * implement Azure Dedicated Hosts
 * deploy and configure scale sets
 * configure Azure Disk Encryption
+
 ### 1.5 Automate deployment and configuration of resources
 * save a deployment as an Azure Resource Manager template
 * modify Azure Resource Manager template
 * evaluate location of new resources
-* configure a virtual disk template
+* configure a virtual hard disk(VHD) template
 * deploy from a template
-* manage a template library
+* manage a image library
 * create and execute an automation runbook
+
 ### 1.6 Implement virtual networking
 * implement VNet to VNet connections
 * implement VNet peering
+* 
 ### 1.7 Implement Azure Active Directory
 * add custom domains
 * configure Azure AD Identity Protection
 * implement self-service password reset
 * implement Conditional Access including MFA
-* configure user accounts for MFA
 * configure fraud alerts
-* configure bypass options
-* configure Trusted IPs
 * configure verification methods
 * implement and manage guest accounts
 * manage multiple directories
@@ -54,16 +56,19 @@
 * identity synchronization options
 * configure and manage password sync and password writeback
 * configure single sign-on
+* configure Azure [AD Connect cloud sync]()
 * use Azure AD Connect Health
+* 
 ## 2. Implement Management and Security Solutions ([25-30%]())
 ### 2.1 Manage workloads in Azure
 * migrate workloads using Azure Migrate
 * implement Azure Backup for VMs
 * implement disaster recovery
-* implement Azure Update Management
+* implement [Azure Automation Update Management]()
+
 ### 2.2 Implement load balancing and network security
 * implement Azure Load Balancer
-* implement an application gateway
+* implement an Azure Application Gateway
 * implement a Web Application Firewall
 * implement Azure Firewall
 * implement Azure Firewall Manager

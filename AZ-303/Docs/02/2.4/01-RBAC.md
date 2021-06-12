@@ -1,5 +1,10 @@
 ## 2.4.01 RBAC:
 
+### How the scope cascades:
+
+<img src="https://user-images.githubusercontent.com/24938159/121759881-83d6b380-cb45-11eb-9fb1-d15079a78cba.png" width="400">
+
+
 ### 2.4.1 Roles:
 
 * Role: Its a json doc with every access defined.

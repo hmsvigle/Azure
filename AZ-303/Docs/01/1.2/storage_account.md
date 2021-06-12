@@ -11,7 +11,9 @@
     * Firewall & Vnet:
       * Allow connections from specific `selected network` i.e CIDR range 
       
-    <img src="https://user-images.githubusercontent.com/24938159/121772933-48180a00-cb96-11eb-9591-2a05d3a21e3a.png" width="400">
+    <img src="https://user-images.githubusercontent.com/24938159/121772933-48180a00-cb96-11eb-9591-2a05d3a21e3a.png" width="400"> 
+  
+  * Data Protection:
 
 * Options inside SA:
   * Containers: like a directory. 

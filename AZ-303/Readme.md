@@ -1,7 +1,7 @@
 # [AZ-303 (Microsoft Azure Architect) Curriculum:](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4psD6)
 
 ## 1. Implement and Monitor an Azure Infrastructure ([50-55%]())
-### 1.1 Implement cloud infrastructure monitoring
+### 1.1 Implement infrastructure monitoring
 * monitor security
 * monitor performance
 * monitor health and availability

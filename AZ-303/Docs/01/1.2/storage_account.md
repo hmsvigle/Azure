@@ -1,3 +1,5 @@
+## Stirage Account:
+
 * create resource -> create storage_account -> `Unique Name`
   * Performance: 
     * Standard: blob, file, queue, table, datalake
@@ -5,6 +7,12 @@
   * Redundancy: LRS/ZRS / GRS / GZRS
   * Protection: 
     * Enable soft delete for blobs: can be restored back after certain days
+  * Networkging:
+    * Firewall & Vnet:
+      * Allow connections from specific `selected network` i.e CIDR range 
+      
+    <img src="https://user-images.githubusercontent.com/24938159/121772933-48180a00-cb96-11eb-9591-2a05d3a21e3a.png" width="400">
+
 * Options inside SA:
   * Containers: like a directory. 
     * protection: private (no aunonymous access), blob , <>

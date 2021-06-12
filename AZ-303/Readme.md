@@ -123,4 +123,23 @@
 * [labs_Recordings:](https://github.com/MicrosoftLearning/Lab-Demo-Recordings)
 * [AZ-303-LearningGit:](https://github.com/MicrosoftLearning/AZ-303-Microsoft-Azure-Architect-Technologies)
 * Exam Notes & Tips: [SLA](https://azure.microsoft.com/en-in/support/legal/sla/summary/)
-  * 
+  
+| Service                | SLA    | Details                                                                   |
+|------------------------|--------|---------------------------------------------------------------------------|
+| API Management Service | 99.90% | Standard tier                                                             |
+| API Management Service | 99.95% | Premium Tier Across 2/more regions                                        |
+| API Management Service | NO SLA | Developer Tier                                                            |
+| App Config store       | 99.90% | Customer Subscription                                                     |
+| App Service            | 99.95% | Customer Subscription                                                     |
+| Application Gateway    | 99.95% | 2/more Medium/Large Instances                                             |
+| Application Insights   | 99.99% | Data Latency                                                              |
+| `VMs`                    | 99.95% | `Availability Sets`                                                         |
+| `VMs`                    | 99.99% | `Availability Zones`                                                        |
+| `VMs`                    | 99.99% | `Premium Storage`                                                           |
+| Event Hub              | 99.99% | Basic/Standard Tier                                                       |
+| Storage Account        | 99.99% | Reqst to Read Data from RA-GRS (Secondary), if attempts fail from primary |
+| Storage Account        | 99.90% | Reqst to Read Data from LRS/ZRS/GRS accounts                              |
+| Storage Account        | 99.90% | Reqst to Read Data to LRS/ZRS/GRS accounts                                |
+| VPN Gateway            | 99.90% | Basic Gateway for VPN/Express Route                                       |
+| VPN Gateway            | 99.95% | Standard/ High Performance/ VpnGw1/ VpnGw2/ VpnGw3 Gateway for VPN        |
+| VPN Gateway            | 99.95% | Standard, High Performance, Ultra Performance Gateway for ExpressRoute    |

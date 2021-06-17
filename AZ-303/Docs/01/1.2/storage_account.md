@@ -2,7 +2,7 @@
 
 * create resource -> create storage_account -> `Unique Name`
   * Performance: 
-    * Standard: blob, file, queue, table, datalake
+    * Standard (General Purppose v2) : blob, file, queue, table, datalake
     * Premium: service specic (blob/file/queue/table)
   * Redundancy: LRS/ZRS / GRS / GZRS
   * Protection: 
@@ -13,7 +13,7 @@
       
     <img src="https://user-images.githubusercontent.com/24938159/121772933-48180a00-cb96-11eb-9591-2a05d3a21e3a.png" width="400"> 
   
-  * Data Protection:
+### Data Protection:
 
 * Options inside SA:
   * Containers: like a directory. 
@@ -31,15 +31,15 @@
     * Copy azure key1 from portal: storage-account -> access keys -> copy key/name & configure to storage explorer to handle further modifications.
 
 
-* Authorize user/app to access services in storage account:
-  1. `Access Keys`:
-    * Under SA -> Access Keys -> show keys
+### Authorize user/app to access services in storage account:
+  #### 1. `Access Keys`:
+    * Under St Ac -> Access Keys -> show keys
       * Copy only Key1/Key2 & it can be configured in azure storage explorer to connect to SA.
         * In `azure storage explorer` Add storage account.
         * Provide key, acc name & then connect.
         * Once done, dettach the account in `azure storage explorer`
       * Access Key gives full authorization to `all resources` (blob/file-share/tables etc)
-  2. Shared Access Signature (SAS Token): 
+ #### 2. Shared Access Signature (SAS Token): 
       SAS can be generated at SA label/Blob Lavel
     * Blob-Lavel:
       * Go to SA -> container -> blob -> Generate SAS -> key (provide expiry date)
@@ -47,12 +47,12 @@
     * Account lavel:
       * Go to SA  -> Shared Access Signature(Left) -> Select services (blob/table/queue) -> Allowed resources (Select all --> Generate SAS Token (key1) (provide expiry date)
       * Configure the SAS Toekn URL in `azure storage explorer` & add account. Then respective services can be accessed 
-  3. Stored Access policy:
+ #### 3. Stored Access policy:
     * SA -> containers -> `Access Policy` -> `Add policy`  -> provide name & expiry time 
 	  * With SAS token -> Associate `Stored Access Policy`, so that the expiry date/time & scope can be controlled with `Stored Access Policy`
 	    * Storage Account -> Storage Explorer -> select blob -> `generate Shared Access Signature` -> Select above created policy -> 
     * Later point of time, if needed to pre-expire the access, just edit the `Stored Access Policy` & its applicable to the container.
-  4. Active Directory Authentication:
+ #### 4. Active Directory Authentication:
     * In Azure AD, create a user & go to SA -> IAM -> Add role assignment -> add role & user.
 
 * Usecase:
@@ -68,23 +68,22 @@
   * GZRS
   * RA-GZRS
 
-* Access Tiers:
+### Access Tiers:
   * Hot (Apears while creating SA)
   * Cool (Apears while creating SA)
   * Archive (Option apear at blob lavel)
     * We cant access data directly in this access tier. 
     * To access data, we need to change the tier from Archive --> Hot/Cool. This takes Standard(upto 15hrs)/Hot(1hr for 10Gb of data)
   
-  Life Cycle Management for Storage-Account:
+ #### Life Cycle Management for Storage-Account:
   * SA -> Blob-serice -> LifeCycleManagement -> Add rule
     * eg: - If blobs not acccessed in lastr 30 days, it changes into Hot by default.
     
-
   Change Replication for SA: (LRS -> ZRS)
   * Manual Migration: Might be downtime & few might not be possible for us to achive
   * Config Update: SA-> Configuration -> Change Replication to ZRS/GRS/RA-GRS
  
-  Performance in SA:
+ #### Performance in SA:
   * While creating SA, we can select Storage_Account Performance (Standard/Premium).
   * Premium -> Account Kind(Storage Purpose v2) --> its for VM HDDs storage. Performance will be enhanced. But no hot/cold/archive kind of option for blob will NOT be available.
   * Premium -> Account Kind(Block Blob Storage) --> High performance for Blob storage

@@ -33,8 +33,8 @@
    * Management groups sit above your subscription & All subscriptions managed by management group.
    * Use Management groups to assign policies, RBAC and for the visibility of the centralized billing information.
    * Management groups can support 6 level of depth (Excludes root MG & subsccription levels) which means you can have one management group part of another management group, this is very helpful for larger organizations with multiple departments or geography. Management groups can be subdevided as per Geography/Department/Billing/Application/Environment; all depends on the organizational structure. 
-   * 10,000 management groups can be supported in a single directory(AAD).
-   * By default, the root management group's display name is Tenant root group. The ID is the Azure Active Directory ID. It can not be deleted/moved.
+   * `10,000 Management Groups` can be supported in a single directory(AAD).
+   * By default, the `root` management group's display name is `Tenant root group`. The ID is the Azure Active Directory ID. It can `not be deleted/moved`.
 
   ![Management-grp-1](https://user-images.githubusercontent.com/24938159/85438382-8d1fe680-b5a9-11ea-8aaa-0c44f932acf4.JPG)
    

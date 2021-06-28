@@ -64,7 +64,7 @@
 * migrate workloads using Azure Migrate
 * implement Azure Backup for VMs
 * implement disaster recovery
-* implement [Azure Automation Update Management]()
+* implement [Azure Automation Update Management](./Docs/02/2.1.02-Manage_Workloads_Azure.md#214-implement-azure-update-management)
 
 ### 2.2 Implement load balancing and network security
 * implement Azure Load Balancer

@@ -11,7 +11,7 @@
 * Initiate automated responses by using Action Groups
 * configure and manage advanced alerts
 
-### 1.2 [Implement storage accounts](./Docs/01/1.2/storage_account.md)
+### 1.2 [Implement storage accounts](./Docs/01/1.2_storage_acc.md)
 * select storage account options based on a use case
 * configure Azure Files and Azure Blob storage
 * configure network access to the storage account

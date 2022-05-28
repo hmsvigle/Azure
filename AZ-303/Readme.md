@@ -1,7 +1,7 @@
 # [AZ-303 (Microsoft Azure Architect) Curriculum:](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4psD6)
 
 ## 1. Implement and Monitor an Azure Infrastructure ([50-55%]())
-### 1.1 Implement infrastructure monitoring
+### 1.1 [Implement infrastructure monitoring](./Docs/01/1.1.Azure-Monitor.md)
 * monitor security
 * monitor performance
 * monitor health and availability
@@ -11,7 +11,7 @@
 * Initiate automated responses by using Action Groups
 * configure and manage advanced alerts
 
-### 1.2 [Implement storage accounts](./Docs/01/1.2/storage_account.md)
+### 1.2 [Implement storage accounts](./Docs/01/1.2_storage_acc.md)
 * select storage account options based on a use case
 * configure Azure Files and Azure Blob storage
 * configure network access to the storage account

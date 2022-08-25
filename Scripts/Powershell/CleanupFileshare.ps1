@@ -1,3 +1,7 @@
+#Directory Structure : 
+#$StorageAccountName/$fileshareName/a|b|c|d/<Dir_Dates>
+
+
 $Subscription="XXXXXXX" 
 $StorageAccountName="YYYYYYYY"  
 $ResourceGroupName="ZZZZZZZZZZZZZ"

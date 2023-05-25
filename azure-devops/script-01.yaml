@@ -1,0 +1,125 @@
+
+# Repo: proj/shared-libraries
+resources:
+  containers:
+  - container: nodejs_paas
+    image: proj/nodejs_paas:1.0.3
+    endpoint: Harbour proj registry
+    env:
+      DETECT_CURL_OPTS: "-k --noproxy '*'"
+      NO_PROXY: 'detect.synopsys.com'
+  repositories:
+  - repository: shared-library
+    type: githubenterprise
+    endpoint: proj_GitHubEnterprise    
+    name: proj/shared-library
+    ref: feature-proj882-marketplacedevops
+  
+trigger: none
+
+schedules:
+- cron: "20 6,18,23 * * 2-5"
+  displayName: "Starting or Stopping dev1 and dev2 apps. Starting hour 07:30. Stopping hour 18:30 for dev2 and int, 00:30 for dev1"
+  always: true
+  branches:
+    include:
+    - sprint-poc
+
+variables:
+- template: environments-vars.yml@shared-library
+- name: stoppinghour-dev1
+  value: "21"
+- name: stoppinghour
+  value: "21"
+- name: startinghour
+  value: "05"
+- name: pool
+  value: "DOTAzure-Ubuntu-20.04"
+
+stages:
+
+- stage: 
+  displayName: "Scheduler"
+  pool: ${{ variables.pool }}
+  variables:
+  - group: 'PaaS'
+  jobs:
+  - job: Scheduler
+    displayName: "Start and Stop apps"
+    container: nodejs_paas
+    steps:
+
+    - script: |
+        pipelinedate=$(date +%H)
+        echo $pipelinedate
+        echo "##vso[task.setvariable variable=pipelinedate]$pipelinedate"
+      name: getDate
+      displayName: "Get running hour"
+      #Login in Paas
+    - script: |
+        echo "##[command]Login in $(space) PaaS environment"
+        cf login -a $(api_url) -u $(paasUser) -p $(paasPasswd) -o $(org) -s $(space)
+        echo "##[command]Login in $(space) PaaS environment --> OK"
+      name: loginInPaas
+      displayName: "Login in $(space) PaaS environment"
+      condition: succeeded()
+    - script: |
+        echo "##[command]We are trying to stop dev1 apps"
+        cf target -s dev1
+        cf a | grep frontendNotToday | awk '{print $1}' | xargs -I {} cf stop {}
+        cf a | grep backendNotToday | awk '{print $1}' | xargs -I {} cf stop {}
+      name: stoppingDev1Apps
+      displayName: "Stop dev1 apps"
+      condition: and(succeeded(), eq(variables['stoppinghour-dev1'], variables['pipelinedate']))
+      continueOnError: true
+    - script: |
+        echo "##[command]We are trying to stop dev2 apps"
+        cf target -s dev2
+        cf a | grep frontend | awk '{print $1}' | xargs -I {} cf stop {}
+        cf a | grep backend | awk '{print $1}' | xargs -I {} cf stop {}
+      name: stoppingDev2Apps
+      displayName: "Stop dev2 apps"
+      condition: and(succeeded(), eq(variables['stoppinghour'], variables['pipelinedate']))
+      continueOnError: true
+    - script: |
+        echo "##[command]We are trying to stop int apps"
+        cf target -s int
+        cf a | grep frontend | awk '{print $1}' | xargs -I {} cf stop {}
+        cf a | grep backend | awk '{print $1}' | xargs -I {} cf stop {}
+      name: stoppingIntApps
+      displayName: "Stop int apps"
+      condition: and(succeeded(), eq(variables['stoppinghour'], variables['pipelinedate']))
+      continueOnError: true
+    - script: |
+        echo "##[command]We are trying to start dev1 apps"
+        cf target -s dev1
+        cf a | grep -v "_2" |  grep frontendNotToday | awk '{print $1}' | xargs -I {} cf start {}
+        cf a | grep -v "_2" |  grep backendNotToday | awk '{print $1}' | xargs -I {} cf start {}
+      name: startingDev1Apps
+      displayName: "Start dev1 apps"
+      condition: and(succeeded(), eq(variables['startinghour'], variables['pipelinedate']))
+      continueOnError: true
+    - script: |
+        echo "##[command]We are trying to start dev2 apps"
+        cf target -s dev2
+        cf a | grep -v "_2" |  grep frontend | awk '{print $1}' | xargs -I {} cf start {}
+        cf a | grep -v "_2" |  grep backend | awk '{print $1}' | xargs -I {} cf start {}
+      name: startingDev2Apps
+      displayName: "Start dev2 apps"
+      condition: and(succeeded(), eq(variables['startinghour'], variables['pipelinedate']))
+    - script: |
+        echo "##[command]We are trying to start int apps"
+        cf target -s int
+        cf a | grep -v "_2" |  grep frontend | awk '{print $1}' | xargs -I {} cf start {}
+        cf a | grep -v "_2" |  grep backend | awk '{print $1}' | xargs -I {} cf start {}
+      name: startingIntApps
+      displayName: "Start int apps"
+      condition: and(succeeded(), eq(variables['startinghour'], variables['pipelinedate']))
+    - task: SendEmail@1
+      inputs:
+        recipients: 'hmsvigle@gmail.com'
+        subject: 'Something happened in Start/Stop Paas Apps'
+        isHtml: true
+        body: 'https://dev.azure.com/daimler/proj/_build?definitionId=171345&_a=summary'
+      displayName: "Send e-mail if something happened"
+      condition: in(variables['Agent.JobStatus'], 'SucceededWithIssues', 'Failed')
